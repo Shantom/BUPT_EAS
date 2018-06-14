@@ -14,8 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("Grades");
 
-    QProcess::execute("python3 ../getGrade.py");
-    QProcess::execute("python3 ../getGradeOnTerms.py");
+    QProcess::execute("python getGrade.py");
+    QProcess::execute("python getGradeOnTerms.py");
     initTable();
     initTableOnTerms();
     ui->tabWidget->setCurrentIndex(0);

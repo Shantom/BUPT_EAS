@@ -1,4 +1,14 @@
 Debug /
+debug/
+release/
+cookies
+grade
+grade_term
+loginInfo
+loginResult
 *.user
 *.jpg
 *~
+*qmake*
+ui*
+Makefile*

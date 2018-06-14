@@ -46,7 +46,7 @@ void Login::on_pushButton_login_clicked()
     out.flush();
     file.close();
 
-    QProcess::execute("python3 ../login.py");
+    QProcess::execute("python login.py");
 
     file.setFileName("loginResult");
     if (!file.open(QIODevice::ReadOnly|QIODevice::Text)) {
@@ -71,7 +71,7 @@ void Login::on_pushButton_login_clicked()
 
 void Login::on_pushButton_getCC_clicked()
 {
-    QProcess::execute("python3 ../getCapcha.py");
+    QProcess::execute("python getCapcha.py");
 
     QResource::unregisterResource("Debug /src.rcc");
     QResource::registerResource("Debug /src.rcc");
